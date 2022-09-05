@@ -2,6 +2,9 @@ import React from 'react'
 import { Baseline } from '../../components/baseline/Baseline'
 import { ButtonCTA } from '../../components/btn/Btn'
 import { ColourSeparator } from '../../components/ColourSeparator/ColourSeparator'
+import { Contact } from '../../components/Contact/Contact'
+import { Horaires } from '../../components/Horaires/Horaires'
+import { Lieu } from '../../components/Lieu/Lieu'
 import { PhotoSelf } from '../../components/PhotoSelf/PhotoSelf'
 import '../../index.scss'
 
@@ -14,6 +17,11 @@ export const Home = () => {
       <Baseline/>
       <PhotoSelf/>
       <ColourSeparator/>
+      <section className="__info">
+        <Horaires/>
+        <Lieu/>
+        <Contact/>
+      </section>
     </div>
   )
 }

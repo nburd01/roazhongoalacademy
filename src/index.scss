@@ -10,6 +10,7 @@ html{
     --third:#a59792; 
     --fourth: #ffffff;
     height: 200vh;
+    overflow-x: hidden;
 }
 
 @media (max-width: 480px) {
@@ -57,6 +58,15 @@ html{
         padding: 1em;
         margin:1em ;
     }
+
+    .btnText{
+        font-size:1.5em ;
+        font-weight: 800;
+        color:var(--secondary);
+        line-height: 1.1em;
+        padding: 1em;
+        margin:1em ;
+    }
     p{
         font-size:1em;
         color: var(--secondary);
@@ -65,7 +75,43 @@ html{
         margin:1em ;
     }
 
-    button{
+    ._BgTitle{
+        display: flex;
+        opacity: 30%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-top: 1em;
 
     }
+    ._BgSubTitle{
+        display: flex;
+        width: 100%;
+        padding: 0 1.5em;
+        width: 100%;
+        margin-top: 0;
+        position: relative;
+
+    }
+    ._BgSubTitle::after{
+        content: "";
+        position: absolute;
+        height: 5px;
+        width: 30px;
+        background-color: var(--primary);
+        top: 25px;
+        z-index: -1;
+    }
+
+    .Left{
+        align-items: start;
+        justify-content: start;
+    }
+    .Right{
+        align-items: end;
+        justify-content: end;
+        
+    }
+
+    
 }
