@@ -1,5 +1,6 @@
 import React from 'react'
-import { Routes, Route, Link } from 'react-router-dom';
+import {Link } from 'react-router-dom';
+import './MainNav.scss'
 
 export const MainNav = () => {
   return (
@@ -10,6 +11,7 @@ export const MainNav = () => {
         <Link to="/seances">Seances</Link>
         <Link to="/multimedia">Multimédia</Link>
         <Link to="/contact">Contact</Link>
+        <Link to="/login">Login</Link>
   </nav>
   )
 }

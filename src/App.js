@@ -3,7 +3,7 @@ import Login from "./adminPages/login/Login";
 import List from "./adminPages/list/List";
 import Single from "./adminPages/single/Single";
 import New from "./adminPages/new/New";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { productInputs, userInputs } from "./formSource";
 import "./style/dark.scss";
 import { useContext } from "react";
@@ -15,9 +15,19 @@ import { Seances } from "./pages/Seances/Seances";
 import { Multimedia } from "./pages/Multimedia/Multimedia";
 import { Contact } from "./pages/Contact/Contact";
 import { MainNav } from "./components/MainNav/MainNav";
+import AdminHome from "./adminPages/home/adminHome";
+import { AuthModeContext } from "./context/AuthContext";
 
 function App() {
   const { darkMode } = useContext(DarkModeContext);
+
+  const {currentUser} = useContext(AuthModeContext);
+
+  const RequireAuth= ({children}) => {
+    return currentUser ? (children) : <Navigate to="/login"/>
+  };
+
+  console.log("currentUser",currentUser);
 
   return (
     <div className={darkMode ? "app dark" : "app"}>
@@ -31,15 +41,27 @@ function App() {
             <Route path="seances" element={<Seances />} />
             <Route path="multimedia" element={<Multimedia />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="login" element={<Login />} />
+            <Route path="admin" element={
+            <RequireAuth>
+              <AdminHome/>
+            </RequireAuth>
+            } />
           </Route>
 
             <Route path="login" element={<Login />} />
             <Route path="users">
-              <Route index element={<List />} />
-              <Route path=":userId" element={<Single />} />
+              <Route index element={
+                <RequireAuth>
+                  <List />
+                </RequireAuth>
+              } />
+              <Route path=":userId" element={
+              <Single />} />
               <Route
                 path="new"
-                element={<New inputs={userInputs} title="Add New User" />}
+                element={
+                <New inputs={userInputs} title="Add New User" />}
               />
             </Route>
             <Route path="products">
@@ -47,7 +69,8 @@ function App() {
               <Route path=":productId" element={<Single />} />
               <Route
                 path="new"
-                element={<New inputs={productInputs} title="Add New Product" />}
+                element={
+                <New inputs={productInputs} title="Add New Product" />}
               />
             </Route>
 
