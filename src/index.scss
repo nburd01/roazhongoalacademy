@@ -1,0 +1,52 @@
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+    --primary: #fee140;
+    --secondary:#242B2E; 
+    --third:#a59792; 
+    --fourth: #ffffff;
+    height: 200vh;
+}
+
+h1{
+    font-size: 2.6em;
+    color: var(--secondary) ;
+    padding: 1em;
+    margin: 1em;
+}
+h2{
+    font-size: 2.1em;
+    color:var(--secondary) ;
+    padding: 1em;
+    margin: 1em;
+}
+h3{
+    font-size: 1.75em ;
+    color:var(--secondary) ;
+    opacity: 75%;
+    padding: var(--secondary);
+    margin: 1em;
+}
+h4{
+    font-size: 1.5em ;
+    color: var(--secondary);
+    padding: 1em;
+    margin:1em ;
+}
+h5{
+    font-size:1.25em ;
+    color:var(--third) ;
+    padding: 1em;
+    margin:1em ;
+}
+p{
+    font-size:1em;
+    color: var(--secondary);
+    opacity: 75%;
+    padding: 1em;
+    margin:1em ;
+}

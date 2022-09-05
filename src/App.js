@@ -17,6 +17,8 @@ import { Contact } from "./pages/Contact/Contact";
 import { MainNav } from "./components/MainNav/MainNav";
 import AdminHome from "./adminPages/home/adminHome";
 import { AuthModeContext } from "./context/AuthContext";
+import "./index.scss";
+
 
 function App() {
   const { darkMode } = useContext(DarkModeContext);
