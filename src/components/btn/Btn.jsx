@@ -4,7 +4,9 @@ import './Btn.scss'
 export const ButtonCTA = () => {
   return (
     <div className="btnContainer">
-        <button>Accéder</button>
+        <button className="btnText">
+            <span>Accéder</span>
+        </button>
     </div>
   )
 }

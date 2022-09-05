@@ -1,14 +1,16 @@
 @media (max-width: 480px) {
+
     .ColourSeparator{
+        display: flex;
         height: 15vh;
         background: var(--primary);
         rotate: -5deg;
         width: 120%;
-        margin-top: -20px;
-        
+        margin-top: -40px;
         justify-content: center;
-        align-items: flex-start;
-        overflow-x: hidden;
-
+        align-items: center;
+        width: 200%;
+        
     }
+
 }
