@@ -13,7 +13,6 @@ html{
     overflow-x: hidden;
 }
 
-@media (max-width: 480px) {
 
     h1{
         font-size: 2.6em;
@@ -138,5 +137,6 @@ html{
 
     }
 
+@media (max-width: 768px) { 
     
 }
