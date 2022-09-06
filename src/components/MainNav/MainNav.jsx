@@ -13,9 +13,9 @@ export const MainNav = () => {
 
   return (
     <div className="MainNav">
-      <div className="logoDiv">
+      <Link to="/" className="logoDiv">
         <img className="logo" src={require('../../assets/img/logo/logo.jpg')} alt="logo" />
-      </div>
+      </Link>
 
 <div className={`navbar-links ${toggleNav ? "active" : ""}`}>
           <ul onClick={toggleClick}>
