@@ -7,6 +7,7 @@
         align-items: center;
         position:relative;
         flex-direction: column;
+        transition: all 0.3s ease-in 0s;
         padding: 1em 0;
             .logoDiv{
                 display:flex;
@@ -27,6 +28,7 @@
                 align-items: center;
                 width: 100%;
                 background-color: var(--primary);
+                transition: all 0.3s ease-in 0s;
                 
                 ul{
                     display: flex;
@@ -34,9 +36,13 @@
                     padding: 0;
                     list-style: none;
                     flex-direction: column;
+                transition: all 0.3s ease-in 0s;
+
 
                     li{
                        padding: 1em;
+                       transition: all 0.3s ease-in 0s;
+
                     }
                 }
             }
