@@ -82,10 +82,18 @@ html{
         padding: 0;
         margin: 0;
         margin-top: 1em;
+        font-size: 10em;
 
     }
+
+    ._divRelative{
+        position: relative;
+    }
+
     ._BgSubTitle{
         display: flex;
+        position: absolute;
+        overflow: hidden;
         width: 100%;
         padding: 0 1.5em;
         width: 100%;
@@ -110,7 +118,14 @@ html{
     .Right{
         align-items: end;
         justify-content: end;
-        
+    }
+
+    .HeroImage{
+        height: 250px;
+    }
+    ._HeroImage{
+        height: 250px;
+
     }
 
     

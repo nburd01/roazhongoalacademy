@@ -18,9 +18,15 @@ export const Home = () => {
       <PhotoSelf/>
       <ColourSeparator/>
       <section className="__info">
-        <Horaires/>
-        <Lieu/>
-        <Contact/>
+        <div className="_divRelative">
+          <Horaires/>
+        </div>
+        <div>
+          <Lieu/>
+        </div>
+        <div>
+          <Contact/>
+        </div>
       </section>
     </div>
   )
