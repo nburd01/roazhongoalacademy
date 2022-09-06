@@ -18,7 +18,7 @@ export const MainNav = () => {
       </div>
 
 <div className={`navbar-links ${toggleNav ? "active" : ""}`}>
-          <ul onClick={() => setToggleNav(!toggleNav)}>
+          <ul onClick={toggleClick}>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/rga">La RGA</Link></li>
             <li><Link to="/inscriptions">Inscriptions</Link></li>
