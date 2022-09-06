@@ -16,14 +16,14 @@ export const MainNav = () => {
       </div>
 
 <div className={`navbar-links ${toggleNav ? "active" : ""}`}>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/rga">La RGA</a></li>
-            <li><a href="/inscriptions">Inscriptions</a></li>
-            <li><a href="/seances">Seances</a></li>
-            <li><a href="/multimedia">Multimédia</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/login">Login</a></li>
+          <ul onClick={() => setToggleNav(!toggleNav)}>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/rga">La RGA</Link></li>
+            <li><Link to="/inscriptions">Inscriptions</Link></li>
+            <li><Link to="/seances">Seances</Link></li>
+            <li><Link to="/multimedia">Multimédia</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/login">Login</Link></li>
           </ul>
         </div>
 
