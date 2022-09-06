@@ -6,7 +6,7 @@ import { Contact } from '../../components/Contact/Contact'
 import { Horaires } from '../../components/Horaires/Horaires'
 import { Lieu } from '../../components/Lieu/Lieu'
 import { PhotoSelf } from '../../components/PhotoSelf/PhotoSelf'
-import '../../index.scss'
+import '../../index.scss' 
 
 export const Home = () => {
   return (
