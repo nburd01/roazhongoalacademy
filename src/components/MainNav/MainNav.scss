@@ -1,19 +1,51 @@
 @media (max-width: 480px) {
     .MainNav{
-        height: 120px;
+        height: auto;
         // background-color: var(--primary);
         display: flex;
         justify-content: center;
         align-items: center;
         position:relative;
+        flex-direction: column;
+        padding: 1em 0;
+            .logoDiv{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            
 
-            .logo{
-                height: 100px;
+                .logo{
+                    height: 100px;
+                    
+                }
             }
-            .NavMenu{
+            .navbar-links{
                 display: none;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                background-color: var(--primary);
+                
+                ul{
+                    display: flex;
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    flex-direction: column;
+
+                    li{
+                       padding: 1em;
+                    }
+                }
             }
-            .hamburgerMenu{
+
+            .navbar-links.active{
+                display: flex;
+            }
+
+            .toggleBtn{
                 position:absolute;
                 top: 40px;
                 right:25px;
