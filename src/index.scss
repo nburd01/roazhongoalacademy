@@ -121,7 +121,11 @@ html{
     }
 
     .HeroImage{
-        height: 250px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        contain: content;
     }
     ._HeroImage{
         height: 250px;
