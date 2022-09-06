@@ -14,7 +14,7 @@ export const Seances = () => {
         <h3 className="_BgSubTitle Left">Séance type</h3>
       </div>
       <div className="styledUnderlignComp">
-        <h6 className="_BgTitle Right">Le matériel</h6>
+        <h6 className="_BgTitle Right">Matériel</h6>
         <h3 className="_BgSubTitle Right">Le matériel</h3>
       </div>
       <div className="styledUnderlignComp">
