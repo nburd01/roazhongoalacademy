@@ -122,24 +122,15 @@ html{
 
     .HeroImage{
         display: flex;
-        width: 220px;
+        // width: 100%;
         height: 350px;
-        position: absolute;
-        background-color: var(--secondary);
         border-top-right-radius: 15px;
         z-index: 1;
         transition: 0.5s ease-in-out;
-        object-fit: cover;
 
     }
     ._HeroImage{
-        display: flex;
-        contain: content;
         object-fit: cover;
-        justify-content: center;
-        align-items: center;
-        
-
     }
 
 @media (min-width: 1200px) { 
