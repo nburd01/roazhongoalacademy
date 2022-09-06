@@ -82,3 +82,16 @@
                 }
             }
     }
+
+    @media (min-width: 768px) { 
+        .MainNav{
+                background-color: var(--primary);
+            
+            .toggleBtn{
+
+                span{
+                    background-color: var(--secondary);       
+                }
+            }
+        }
+    }
