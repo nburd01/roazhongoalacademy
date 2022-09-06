@@ -29,7 +29,7 @@ export const MainNav = () => {
           </ul>
         </div>
 
-      <span className="toggleBtn" onClick={toggleClick}>
+      <span className="toggleBtn" onClick={toggleClick} >
         <span></span>
         <span></span>
         <span></span>
