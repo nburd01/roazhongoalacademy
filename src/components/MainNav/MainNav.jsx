@@ -8,6 +8,8 @@ export const MainNav = () => {
 
   const [toggleNav, setToggleNav] = useState(false)
 
+  const toggleClick = () => setToggleNav(!toggleNav)
+
 
   return (
     <div className="MainNav">
@@ -27,7 +29,7 @@ export const MainNav = () => {
           </ul>
         </div>
 
-      <span className="toggleBtn"  onClick={() => setToggleNav(!toggleNav)}>
+      <span className="toggleBtn" onClick={toggleClick}>
         <span></span>
         <span></span>
         <span></span>
