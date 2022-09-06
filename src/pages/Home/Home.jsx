@@ -10,7 +10,7 @@ import '../../index.scss'
 
 export const Home = () => {
   return (
-    <div className="container intro">
+    <div className="container">
       <h1>Bienvenue à la Roazhon Goal Academy !</h1>
       <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tempore possimus quas. </h3>
       <ButtonCTA/>

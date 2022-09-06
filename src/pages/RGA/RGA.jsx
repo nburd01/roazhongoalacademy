@@ -2,7 +2,7 @@ import React from 'react'
 
 export const RGA = () => {
   return (
-    <div className="container intro">
+    <div className="container">
 
       <h1>A propos de la Roazhon Goal Academy</h1>
       <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tempore possimus quas. </h3>
