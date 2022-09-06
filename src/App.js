@@ -19,7 +19,11 @@ import AdminHome from "./adminPages/home/adminHome";
 import { AuthModeContext } from "./context/AuthContext";
 import "./index.scss";
 import { Footer } from "./components/Footer/Footer";
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { faTwitter, faFacebook, faLinkedin, faFontAwesome } from '@fortawesome/free-brands-svg-icons'
 
+library.add(fas, faTwitter, faFacebook, faLinkedin, faFontAwesome)
 
 function App() {
   const { darkMode } = useContext(DarkModeContext);
