@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Multimedia = () => {
   return (
-    <div className="container intro">
+    <div className="container">
 
     <h1>Le coin multimédia</h1>
     <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tempore possimus quas. </h3>

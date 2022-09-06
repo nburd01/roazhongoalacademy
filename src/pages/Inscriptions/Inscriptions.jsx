@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Inscriptions = () => {
   return (
-    <div className="container intro">
+    <div className="container">
 
       <h1>S'inscrire à la  RGA</h1>
       <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tempore possimus quas. </h3>
