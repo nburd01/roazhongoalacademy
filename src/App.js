@@ -18,6 +18,7 @@ import { MainNav } from "./components/MainNav/MainNav";
 import AdminHome from "./adminPages/home/adminHome";
 import { AuthModeContext } from "./context/AuthContext";
 import "./index.scss";
+import { Footer } from "./components/Footer/Footer";
 
 
 function App() {
@@ -77,6 +78,7 @@ function App() {
             </Route>
 
         </Routes>
+      <Footer/>
       </BrowserRouter>
     </div>
   );

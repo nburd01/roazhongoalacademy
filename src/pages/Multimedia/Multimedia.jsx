@@ -6,7 +6,9 @@ export const Multimedia = () => {
 
     <h1>Le coin multimédia</h1>
     <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tempore possimus quas. </h3>
-    <img src={require('../../assets/img/galerie/home2.jpg')} className="HeroImage Left" alt="img"/>
+    <div className="HeroImage">
+        <img src={require('../../assets/img/galerie/home2.jpg')} className="_HeroImage Left" alt="img"/>
+      </div>
     <div className="styledUnderlignComp">
       <h6 className="_BgTitle Left">Photos</h6>
       <h3 className="_BgSubTitle Left">Photos</h3>
